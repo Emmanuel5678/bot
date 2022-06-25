@@ -1,0 +1,8 @@
+import telebot
+API_KEY=5478009421:AAFS7bRAjijWi3rseLtbU5e5s-ekmFhwkck
+bot=telebot.Telebot(API_KEY)
+@bot.message_handler(commands=['start'])
+def start(message):
+    bot.reply_to(message, 'Hi my name is sporty how may i help you')
+    
+    bot.polling( )
